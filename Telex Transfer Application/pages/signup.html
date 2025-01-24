@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css"> 
+        <title>
+            Sign Up
+        </title>
+    </head>
+    <body>        <div class="image-wrapper">
+        <img src="../images/logo-1.png"><br><br>
+            <p class="bold">Welcome to Burgan Bank's Telext Transfer Application</p>
+            <p class="bold">Developed by: Hassan El Shediak</p>
+            <div class="login-wrapper">
+            
+            <form action="../backEnd/addUser.php" method="POST" id="signup-form">
+
+                <input type="text" name="username" id="username" class="input-field" placeholder="Username" >
+                <br>
+                
+                <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                <br>
+                
+                <input type="password" name="confirm-password" id="confirm-password" class="input-field" placeholder="Confirm Password">
+                <br>
+                <select name="role" id="role" class="select-field">
+                    <option class="options" value="branch">Branch</option>
+                    <option class="options" value="operations">Operations</option>
+                </select><br>
+                <input type="text" name="first-name" id="first-name" class="input-field" placeholder="First Name">
+                
+                <br>
+                <input type="text" name="last-name" id="last-name" class="input-field" placeholder="Last Name">
+                <br>
+                <input type="text" name="email" id="email" class="input-field" placeholder="Email">
+                <br>
+              
+                
+                
+                
+                <input type="button" value="Sign Up" onclick="signup()" class="submit-button" ></form></div><br>
+            <a href="../index.php" class="login-signup">Login</a></div>
+        </div>
+    <script>
+        function signup(){
+            form = document.getElementById("signup-form");
+            form.submit();
+        }
+
+    </script>
+</body>
+</html>
