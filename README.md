@@ -87,7 +87,3 @@
 
 This project is proprietary and developed as part of the Burgan Bank IT department's internship program.
 
----
-
-**Contact**  
-For any inquiries or issues, please contact the development team at [Burgan Bank](https://www.burgan.com).
